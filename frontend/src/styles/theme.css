@@ -1,0 +1,32 @@
+:root{
+  --bg-primary:#020617;
+  --bg-secondary:#0f172a;
+  --card-bg:#1e293b;
+
+  --primary:#2563eb;
+  --primary-light:#3b82f6;
+
+  --text:#f8fafc;
+  --text-secondary:#cbd5e1;
+
+  --success:#22c55e;
+  --danger:#ef4444;
+
+  --shadow:0 12px 30px rgba(37,99,235,.20);
+
+  --radius:16px;
+
+  --transition:.3s ease;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg-primary);
+  color:var(--text);
+  font-family:"Segoe UI",sans-serif;
+}

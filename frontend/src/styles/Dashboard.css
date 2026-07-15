@@ -1,0 +1,323 @@
+/* ===========================
+   Dashboard
+=========================== */
+
+.dashboard{
+    min-height:100vh;
+    background:#020617;
+    color:#fff;
+    font-family:"Segoe UI",sans-serif;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.dashboard-navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+
+    background:#0f172a;
+
+    border-bottom:1px solid rgba(59,130,246,.25);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:bold;
+    color:#3b82f6;
+
+}
+
+.navbar-right{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.welcome-user{
+
+    color:#e2e8f0;
+    font-weight:600;
+
+}
+
+.logout-btn{
+
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+
+    color:white;
+
+    border:none;
+
+    padding:10px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+
+}
+
+/* ===========================
+   Content
+=========================== */
+
+.dashboard-content{
+
+    padding:40px;
+
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.dashboard-hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+.dashboard-hero h1{
+
+    font-size:40px;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.dashboard-hero p{
+
+    color:#94a3b8;
+
+    max-width:700px;
+
+    line-height:1.8;
+
+}
+
+.hero-badge{
+
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+
+    padding:15px 28px;
+
+    border-radius:40px;
+
+    color:white;
+
+    font-weight:bold;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:#1e293b;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    border:1px solid #334155;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 15px 30px rgba(37,99,235,.25);
+
+}
+
+.card h2{
+
+    color:#94a3b8;
+
+    margin-bottom:15px;
+
+}
+
+.card h1{
+
+    color:#3b82f6;
+
+    font-size:42px;
+
+}
+
+.card h3{
+
+    color:white;
+
+}
+
+/* ===========================
+   Analytics
+=========================== */
+
+.analytics-section{
+
+    margin-top:45px;
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    border:1px solid #334155;
+
+}
+
+.analytics-title{
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+   Quick Actions
+=========================== */
+
+.quick-actions{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.dashboard-btn{
+
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+
+    color:white;
+
+    border:none;
+
+    padding:16px 28px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.dashboard-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.dashboard-navbar{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.dashboard-hero{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.quick-actions{
+
+flex-direction:column;
+
+}
+
+.dashboard-btn{
+
+width:100%;
+
+}
+
+.dashboard-content{
+
+padding:20px;
+
+}
+
+.dashboard-hero h1{
+
+font-size:30px;
+
+}
+
+}

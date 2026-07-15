@@ -1,0 +1,328 @@
+/* ==========================================
+   Resume Copilot AI - Upload Resume
+========================================== */
+
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#020617;
+    color:#fff;
+}
+
+/* Container */
+
+.container{
+
+    max-width:1300px;
+
+    margin:40px auto;
+
+    padding:30px;
+
+}
+
+/* Heading */
+
+.container h1{
+
+    text-align:center;
+
+    color:#3b82f6;
+
+    font-size:46px;
+
+    margin-bottom:35px;
+
+}
+
+/* Upload Card */
+
+.upload-box{
+
+    background:#1e293b;
+
+    border:2px dashed #3b82f6;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 15px 35px rgba(37,99,235,.18);
+
+}
+
+.upload-box:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.35);
+
+}
+
+/* Upload Icon */
+
+.upload-icon{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+/* Upload Heading */
+
+.upload-box h2{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.upload-text{
+
+    color:#94a3b8;
+
+    margin-bottom:25px;
+
+    font-size:17px;
+
+}
+
+/* File Input */
+
+input[type=file]{
+
+    width:100%;
+
+    background:#0f172a;
+
+    color:#fff;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #334155;
+
+    cursor:pointer;
+
+}
+
+/* Selected File */
+
+.selected-file{
+
+    margin-top:20px;
+
+    color:#22c55e;
+
+    font-weight:bold;
+
+    font-size:17px;
+
+}
+
+/* Button */
+
+.analyze-btn{
+
+    margin-top:25px;
+
+    width:100%;
+
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.analyze-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+
+}
+
+/* Loading */
+
+.loading{
+
+    margin-top:35px;
+
+    text-align:center;
+
+}
+
+.loading h2{
+
+    color:#3b82f6;
+
+}
+
+.loading p{
+
+    color:#94a3b8;
+
+}
+
+/* Result Cards */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+    margin-top:45px;
+
+}
+
+.card{
+
+    background:#1e293b;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    border:1px solid #334155;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 15px 30px rgba(37,99,235,.25);
+
+}
+
+.card h2{
+
+    color:#3b82f6;
+
+    margin-bottom:15px;
+
+}
+
+.card h3{
+
+    color:white;
+
+}
+
+.card p{
+
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+}
+
+.card ul{
+
+    padding-left:20px;
+
+}
+
+.card li{
+
+    color:#cbd5e1;
+
+    margin:10px 0;
+
+}
+
+/* ATS Score */
+
+.score{
+
+    font-size:60px;
+
+    color:#22c55e;
+
+    font-weight:bold;
+
+    text-align:center;
+
+}
+
+/* Resume Preview */
+
+pre{
+
+    background:#0f172a;
+
+    color:#e2e8f0;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    max-height:450px;
+
+    overflow:auto;
+
+    border:1px solid #334155;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+
+padding:15px;
+
+}
+
+.container h1{
+
+font-size:34px;
+
+}
+
+.upload-box{
+
+padding:25px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.analyze-btn{
+
+width:100%;
+
+}
+
+}

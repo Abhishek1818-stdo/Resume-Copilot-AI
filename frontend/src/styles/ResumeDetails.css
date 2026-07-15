@@ -1,0 +1,111 @@
+.resume-details-container{
+    max-width:1100px;
+    margin:40px auto;
+    padding:30px;
+    background:#020617;
+    color:#fff;
+    font-family:"Segoe UI",sans-serif;
+}
+
+.resume-title{
+    text-align:center;
+    color:#3b82f6;
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+.download-section{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.download-btn{
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+    color:#fff;
+    border:none;
+    padding:15px 30px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+}
+
+.ats-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    margin-bottom:30px;
+    border:1px solid #334155;
+}
+
+.ats-card h2{
+    color:#3b82f6;
+    margin-bottom:20px;
+}
+
+.ats-score{
+    font-size:65px;
+    color:#22c55e;
+    font-weight:bold;
+}
+
+.section-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:25px;
+    border:1px solid #334155;
+    transition:.3s;
+}
+
+.section-card:hover{
+    transform:translateY(-5px);
+    border-color:#3b82f6;
+    box-shadow:0 12px 25px rgba(37,99,235,.2);
+}
+
+.section-title{
+    color:#3b82f6;
+    margin-bottom:15px;
+}
+
+.section-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.section-card ul,
+.section-card ol{
+    padding-left:25px;
+}
+
+.section-card li{
+    color:#e2e8f0;
+    margin:10px 0;
+}
+
+@media(max-width:768px){
+
+.resume-details-container{
+padding:20px;
+}
+
+.resume-title{
+font-size:30px;
+}
+
+.ats-score{
+font-size:45px;
+}
+
+.download-btn{
+width:100%;
+}
+
+}

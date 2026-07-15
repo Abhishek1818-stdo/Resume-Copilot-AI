@@ -1,0 +1,368 @@
+/* ==========================================
+   Cover Letter Page
+========================================== */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#020617;
+    color:#fff;
+}
+
+/* Container */
+
+.cover-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+/* Card */
+
+.cover-card{
+
+    width:100%;
+
+    max-width:950px;
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    border:1px solid #334155;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+/* Heading */
+
+.cover-card h1{
+
+    color:#3b82f6;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    color:#94a3b8;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-size:17px;
+
+}
+
+/* Resume */
+
+.resume-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    background:#0f172a;
+
+    padding:15px 20px;
+
+    border-radius:12px;
+
+}
+
+.resume-success{
+
+    color:#22c55e;
+
+    font-weight:bold;
+
+}
+
+.resume-error{
+
+    color:#ef4444;
+
+    font-weight:bold;
+
+}
+
+/* Inputs */
+
+.cover-input{
+
+    width:100%;
+
+    margin-bottom:18px;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #334155;
+
+    background:#0f172a;
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.cover-input:focus{
+
+    border-color:#3b82f6;
+
+    box-shadow:0 0 15px rgba(59,130,246,.35);
+
+}
+
+/* Generate Button */
+
+.generate-btn{
+
+    width:100%;
+
+    margin-top:10px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.generate-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+
+}
+
+.generate-btn:disabled{
+
+    opacity:.7;
+
+    cursor:not-allowed;
+
+}
+
+/* Result */
+
+.cover-result{
+
+    margin-top:40px;
+
+    background:#0f172a;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    border:1px solid #334155;
+
+}
+
+.cover-result h2{
+
+    color:#3b82f6;
+
+    margin-bottom:20px;
+
+}
+
+/* Textarea */
+
+.cover-textarea{
+
+    width:100%;
+
+    min-height:420px;
+
+    background:#020617;
+
+    color:#e2e8f0;
+
+    border:1px solid #334155;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    resize:vertical;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.cover-textarea:focus{
+
+    border-color:#3b82f6;
+
+    box-shadow:0 0 15px rgba(59,130,246,.25);
+
+}
+
+/* Buttons */
+
+.cover-actions{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.copy-btn{
+
+    flex:1;
+
+    background:#10b981;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.copy-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(16,185,129,.35);
+
+}
+
+.pdf-btn{
+
+    flex:1;
+
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pdf-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.35);
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.cover-container{
+
+padding:20px;
+
+}
+
+.cover-card{
+
+padding:25px;
+
+}
+
+.resume-info{
+
+flex-direction:column;
+
+gap:10px;
+
+align-items:flex-start;
+
+}
+
+.cover-actions{
+
+flex-direction:column;
+
+}
+
+.copy-btn,
+.pdf-btn{
+
+width:100%;
+
+}
+
+.cover-card h1{
+
+font-size:30px;
+
+}
+
+}
