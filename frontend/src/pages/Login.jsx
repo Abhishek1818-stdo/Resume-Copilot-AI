@@ -8,7 +8,7 @@ function Login() {
 
   const login = async () => {
     try {
-      const res = await axios.post("http://127.0.0.1:8000/login", {
+      const res = await axios.post("https://resume-copilot-ai.onrender.com/login", {
         name: "",
         email,
         password,

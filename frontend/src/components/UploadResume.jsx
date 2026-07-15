@@ -18,9 +18,8 @@ function UploadResume() {
 
     try {
       setLoading(true);
-
-      const response = await axios.post(
-        "http://127.0.0.1:8000/upload",
+const response = await axios.post(
+  "https://resume-copilot-ai.onrender.com/upload",
         formData,
         {
           headers: {
