@@ -13,10 +13,12 @@ from app.services.gemini_service import (
 from app.routes.auth import router as auth_router
 
 app = FastAPI()
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://resume-copilot-ai.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -233,7 +235,7 @@ async def create_cover_letter(data: CoverLetterRequest):
 
     return {
         "cover_letter": cover_letter
-    }
+    }s
 @app.get("/latest-resume")
 async def get_latest_resume():
 
