@@ -19,8 +19,12 @@ function Signup() {
 
       window.location.href = "/login";
     } catch (err) {
-      alert(err.response?.data?.detail || "Signup Failed");
-    }
+  console.log("ERROR:", err);
+  console.log("RESPONSE:", err.response);
+  console.log("DATA:", err.response?.data);
+
+  alert(JSON.stringify(err.response?.data || err.message));
+}
   };
 
   return (
