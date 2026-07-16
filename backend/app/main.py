@@ -235,7 +235,7 @@ async def create_cover_letter(data: CoverLetterRequest):
 
     return {
         "cover_letter": cover_letter
-    }s
+    }
 @app.get("/latest-resume")
 async def get_latest_resume():
 
